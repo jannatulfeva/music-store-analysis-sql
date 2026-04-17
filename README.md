@@ -43,7 +43,10 @@ SQL
 - Import the dataset
 - Run the queries from the SQL file
 
+# Author
 
+Jannatul Ferdaus Eva
+Email: jannateva76@gmail.com
 
 
 
