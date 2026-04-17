@@ -38,11 +38,6 @@ SQL
 - Used CTE (WITH clause)
 - Used window function (ROW_NUMBER)
 
-# How to Run
-- Open any SQL environment (MySQL / PostgreSQL / SQLite)
-- Import the dataset
-- Run the queries from the SQL file
-
 # Author
 
 Jannatul Ferdaus Eva
