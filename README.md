@@ -60,7 +60,7 @@ The analysis revealed several critical insights regarding global music sales:
 - High-level revenue is heavily concentrated in specific geographic markets, with clear "Top 3" spending countries identified.
 
 # How to Run This Project
-- Clone the repository: git clone https://github.com/jannatulfeva/music_store_sql_analysis.git
+- Clone the repository: https://github.com/jannatulfeva/music-store-analysis-sql
 
 - Database Setup: Import the provided .sql file into your PostgreSQL environment (e.g., pgAdmin or psql).
 
