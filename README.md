@@ -62,7 +62,7 @@ The analysis revealed several critical insights regarding global music sales:
 # How to Run This Project
 - Clone the repository: https://github.com/jannatulfeva/music-store-analysis-sql
 
-- Database Setup: Import the provided .sql file into your PostgreSQL environment (e.g., pgAdmin or psql).
+- Database Setup: Import the provided .sql file into your PostgreSQL environment (pgAdmin or psql).
 
 - Execute Queries: Open the music_queries.sql file and run the scripts to see the results of the analysis.
 
