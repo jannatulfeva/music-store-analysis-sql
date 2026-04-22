@@ -1,48 +1,86 @@
 # music-store-analysis-sql
-
-Analyzing a music store database using SQL to answer different data-related questions.
+Analyzing a relational music database to understand consumer behavior, artist performance, and regional sales trends using PostgreSQL.
 
 # Overview
+This project audits a complex relational music store database to extract actionable business intelligence. The goal is to analyze the relationship between artists, genres, and customer spending habits across different global regions. Using advanced SQL techniques, the project transforms raw transactional data into a clear picture of market performance and listener engagement.
 
-This project uses SQL queries on a music store database to explore and analyze the data. The goal was to practice SQL by solving different questions using the dataset.
-
-# Objective
-
+# Business Objective
 The main objectives of this project are:
 
-- Write SQL queries to retrieve data
-- Practice JOIN operations across multiple tables
-- Use aggregation functions like SUM and COUNT
-- Solve different questions based on the dataset
+- Analyze revenue distribution across different musical genres.
+
+- Identify the highest-spending customers in each geographic region.
+
+- Determine the most popular artists based on track purchase frequency.
+
+- Rank market performance by country to identify top revenue drivers.
+
+- Solve multi-dimensional business questions using complex relational queries.
 
 # Dataset
+The project utilizes a relational database containing several interconnected tables:
 
-The project uses a music store relational database with tables such as:
+- Invoice & InvoiceLine: Transactional details and totals.
 
-- customer
-- invoice
-- invoice_line
-- track
-- album
-- artist
-- genre
+- Customer: Geographic and contact information for global clients.
+
+- Track & Album: Details on specific music offerings.
+
+- Artist & Genre: Categorization and credit for the music catalog.
 
 # Tools & Technologies
-SQL
+The analysis was performed using:
 
-# What I Did
-- Wrote multiple SQL queries to answer given questions
-- Used JOINs to combine data from different tables
-- Applied GROUP BY with aggregation functions
-- Used subqueries in some cases
-- Used CTE (WITH clause)
-- Used window function (ROW_NUMBER)
+- PostgreSQL: For complex data querying and relational management.
 
-# Author
+- SQL Techniques: CTEs (Common Table Expressions), Window Functions (ROW_NUMBER), Joins, and Aggregations.
 
-Jannatul Ferdaus Eva
+- Database Schema: Multi-table relational structure.
 
-Email: jannateva76@gmail.com
+# Data Analysis & Query Logic
+To extract insights, several advanced SQL operations were executed:
+
+- Complex Joins: Linked customer data with invoice and track details to map global spending.
+
+- CTEs: Used to create temporary result sets for multi-step calculations like "Top Genre per Country."
+
+- Window Functions: Applied ROW_NUMBER() and RANK() to identify the #1 customer and artist in each specific region.
+
+- Aggregations: Summarized total sales and track counts to identify volume leaders.
+
+# Key Findings
+The analysis revealed several critical insights regarding global music sales:
+
+- Rock emerged as the dominant genre, yielding the highest total sales volume and listener engagement.
+
+- Identified the top-spending customer for every country by ranking regional invoice totals.
+
+- Discovered the most popular artist in each country based on the number of tracks purchased.
+
+- High-level revenue is heavily concentrated in specific geographic markets, with clear "Top 3" spending countries identified.
+
+# How to Run This Project
+- Clone the repository: git clone https://github.com/jannatulfeva/music_store_sql_analysis.git
+
+- Database Setup: Import the provided .sql file into your PostgreSQL environment (e.g., pgAdmin or psql).
+
+- Execute Queries: Open the music_queries.sql file and run the scripts to see the results of the analysis.
+
+# Final Recommendations
+- Based on the SQL analysis, the following actions are recommended:
+
+- Inventory Optimization: Increase the catalog depth for high-performing genres like Rock in top-spending regions.
+
+- Targeted Marketing: Launch loyalty campaigns specifically for the "Top-Spending" customer segments identified in the analysis.
+
+- Regional Tours: Use artist popularity data by country to suggest optimal locations for future live events or promotions.
+
+- Cross-Selling: Bundle popular tracks from top artists with emerging artists in the same genre to diversify sales.
+
+# Author & Contact
+Jannatul Ferdaus Eva Data Analyst
+
+📧 Email: jannateva76@gmail.com
 
 
 
